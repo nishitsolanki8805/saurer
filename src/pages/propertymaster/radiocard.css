@@ -1,0 +1,87 @@
+
+.card-min {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	padding: 15px 10px;
+	background-color: #ffff;
+	border-radius: 10px;
+	margin: 0 15px;
+	transition: all 0.2s ease;
+    border: solid 2px  #1735b8;
+}
+
+.card-min:hover {
+	box-shadow: 0 0 20px -12px rgba(0, 0, 0, 0.4);
+}
+
+.card-min input[type="radio"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.card-min .checkmark {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 16px;
+	height: 16px;
+	/* border: solid 1px  #1735b8; */
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-min .checkmark:after {
+	position: absolute;
+	display: none;
+	content: "";
+	top: 2px;
+	left: 2px;
+	width: 10px;
+	height: 10px;
+	/* background-color:  #1735b8; */
+	border-radius: 50%;
+}
+
+.card-min .label {
+	font-size: 1em;
+    font-weight: 700;
+}
+
+.card-min .price {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+.card-min .decoration-card {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	background-color: rgba(39, 23, 184, 0.12);
+	border-radius: 10px;
+	pointer-events: none;
+}
+
+.card-min input[type="radio"]:checked ~ .checkmark:after {
+	display: block;
+}
+
+.card-min input[type="radio"]:checked ~ .decoration-card {
+	display: block;
+}
+
+
+
+

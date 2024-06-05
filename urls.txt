@@ -1,0 +1,9 @@
+staging
+"https://absoluteweb.org/propertymanagement",
+
+prod
+"https://absoluteweb.org/propertymanagement/prod",
+
+
+Live
+"https://suhanibuilders.com/webapp"
